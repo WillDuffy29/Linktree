@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  padding: max(20px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(20px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
   font-family: Georgia, serif;
   background-image: linear-gradient(180deg, #464646, #9e9e9e);
   color: #ffffff;
@@ -12,7 +17,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .container {
